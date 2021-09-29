@@ -15,7 +15,6 @@
 		B63B901226F63662008BB129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63B901026F63662008BB129 /* LaunchScreen.storyboard */; };
 		B63B901D26F63663008BB129 /* sportpopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B901C26F63663008BB129 /* sportpopTests.swift */; };
 		B63B902826F63663008BB129 /* sportpopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B902726F63663008BB129 /* sportpopUITests.swift */; };
-		B63B903626F63771008BB129 /* ViewLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63B903526F63771008BB129 /* ViewLogin.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		B63B902326F63663008BB129 /* sportpopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sportpopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63B902726F63663008BB129 /* sportpopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportpopUITests.swift; sourceTree = "<group>"; };
 		B63B902926F63663008BB129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B63B903526F63771008BB129 /* ViewLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewLogin.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +101,9 @@
 			children = (
 				B63B900526F63660008BB129 /* AppDelegate.swift */,
 				B63B900726F63660008BB129 /* SceneDelegate.swift */,
-				B63B900926F63660008BB129 /* ViewController.swift */,
-				B63B903526F63771008BB129 /* ViewLogin.xib */,
-				B63B900B26F63660008BB129 /* Main.storyboard */,
+				B6A52BAA2704E63500AC10F6 /* Model */,
+				B6A52BA82704E5F600AC10F6 /* View */,
+				B6A52BA92704E61A00AC10F6 /* Controller */,
 				B63B900E26F63662008BB129 /* Assets.xcassets */,
 				B63B901026F63662008BB129 /* LaunchScreen.storyboard */,
 				B63B901326F63662008BB129 /* Info.plist */,
@@ -129,6 +127,29 @@
 				B63B902926F63663008BB129 /* Info.plist */,
 			);
 			path = sportpopUITests;
+			sourceTree = "<group>";
+		};
+		B6A52BA82704E5F600AC10F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B63B900B26F63660008BB129 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A52BA92704E61A00AC10F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B63B900926F63660008BB129 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6A52BAA2704E63500AC10F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +257,6 @@
 			files = (
 				B63B901226F63662008BB129 /* LaunchScreen.storyboard in Resources */,
 				B63B900F26F63662008BB129 /* Assets.xcassets in Resources */,
-				B63B903626F63771008BB129 /* ViewLogin.xib in Resources */,
 				B63B900D26F63660008BB129 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
