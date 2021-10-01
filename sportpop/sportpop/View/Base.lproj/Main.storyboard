@@ -27,13 +27,35 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Password" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hYY-9V-eOh">
+                                <rect key="frame" x="20" y="735" width="374" height="41"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" label="password"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="password"/>
+                            </textView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" text="Username" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="840-q3-aEe">
+                                <rect key="frame" x="20" y="675" width="374" height="41"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" label="password"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="username"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="840-q3-aEe" secondAttribute="trailing" constant="20" id="8dP-4Z-csa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BwE-Oa-iX6" secondAttribute="trailing" constant="20" id="AQx-fb-D7H"/>
+                            <constraint firstItem="hYY-9V-eOh" firstAttribute="top" secondItem="840-q3-aEe" secondAttribute="bottom" constant="20" id="Ah4-dm-SOL"/>
                             <constraint firstItem="BwE-Oa-iX6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H1t-Xb-ofG"/>
+                            <constraint firstItem="hYY-9V-eOh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jqy-Mx-wv5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hYY-9V-eOh" secondAttribute="trailing" constant="20" id="LWm-hK-khM"/>
+                            <constraint firstItem="840-q3-aEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZQN-Nm-0Us"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BwE-Oa-iX6" secondAttribute="bottom" constant="16" id="cWD-Ms-lSs"/>
+                            <constraint firstItem="BwE-Oa-iX6" firstAttribute="top" secondItem="hYY-9V-eOh" secondAttribute="bottom" constant="20" id="ea1-O4-gPT"/>
                         </constraints>
                     </view>
                 </viewController>
