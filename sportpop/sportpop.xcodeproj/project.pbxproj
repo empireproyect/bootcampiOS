@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6048F9A2709B5230027ECD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6048F992709B5230027ECD5 /* LaunchScreen.storyboard */; };
 		B63B900626F63660008BB129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900526F63660008BB129 /* AppDelegate.swift */; };
 		B63B900826F63660008BB129 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900726F63660008BB129 /* SceneDelegate.swift */; };
 		B63B900A26F63660008BB129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900926F63660008BB129 /* ViewController.swift */; };
 		B63B900D26F63660008BB129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63B900B26F63660008BB129 /* Main.storyboard */; };
 		B63B900F26F63662008BB129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63B900E26F63662008BB129 /* Assets.xcassets */; };
-		B63B901226F63662008BB129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63B901026F63662008BB129 /* LaunchScreen.storyboard */; };
 		B63B901D26F63663008BB129 /* sportpopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B901C26F63663008BB129 /* sportpopTests.swift */; };
 		B63B902826F63663008BB129 /* sportpopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B902726F63663008BB129 /* sportpopUITests.swift */; };
 /* End PBXBuildFile section */
@@ -35,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6048F992709B5230027ECD5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63B900226F63660008BB129 /* sportpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportpop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63B900526F63660008BB129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B63B900726F63660008BB129 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B63B900926F63660008BB129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B63B900C26F63660008BB129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63B900E26F63662008BB129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B63B901126F63662008BB129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63B901326F63662008BB129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63B901826F63663008BB129 /* sportpopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sportpopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63B901C26F63663008BB129 /* sportpopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportpopTests.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				B6A52BA82704E5F600AC10F6 /* View */,
 				B6A52BA92704E61A00AC10F6 /* Controller */,
 				B63B900E26F63662008BB129 /* Assets.xcassets */,
-				B63B901026F63662008BB129 /* LaunchScreen.storyboard */,
+				B6048F992709B5230027ECD5 /* LaunchScreen.storyboard */,
 				B63B901326F63662008BB129 /* Info.plist */,
 			);
 			path = sportpop;
@@ -255,7 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63B901226F63662008BB129 /* LaunchScreen.storyboard in Resources */,
+				B6048F9A2709B5230027ECD5 /* LaunchScreen.storyboard in Resources */,
 				B63B900F26F63662008BB129 /* Assets.xcassets in Resources */,
 				B63B900D26F63660008BB129 /* Main.storyboard in Resources */,
 			);
@@ -326,14 +326,6 @@
 				B63B900C26F63660008BB129 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B63B901026F63662008BB129 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B63B901126F63662008BB129 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -463,11 +455,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH5J7Q8XUC;
 				INFOPLIST_FILE = sportpop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rhcdesarrollo.clase.sportpop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.companyios.sportpop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,11 +475,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH5J7Q8XUC;
 				INFOPLIST_FILE = sportpop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rhcdesarrollo.clase.sportpop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.companyios.sportpop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
