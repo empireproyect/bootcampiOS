@@ -7,6 +7,31 @@
 
 import Foundation
 
+// model
+ 
+enum LoginType: String {
+    case normal = "Sing normal"
+    case test = "Sing testing"
+    case google = "Sing Google"
+    
+    var name: String {
+        return self.rawValue
+    }
+    
+}
+
+struct Login {
+    var username: String?
+    var password: String?
+    var token: String?
+    
+    init(username: String?, password: String?, token: String? = nil) {
+        self.username = username
+        self.password = password
+        self.token = token
+    }
+}
+
 struct User {
     var username: String // es posible que no haga falta, el email es el login
     var password: String
