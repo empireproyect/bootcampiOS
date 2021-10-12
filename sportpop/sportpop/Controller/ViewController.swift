@@ -31,8 +31,8 @@ class ViewController: UIViewController {
     private func initializeData() {
         
         //Playholder text
-        Username?.placeholder = "Userndfdame"
-        Password?.placeholder = "Passwdfdord"
+        Username?.placeholder = "Username"
+        Password?.placeholder = "Password"
         
         
 //        loginViewModel.delegate = self
@@ -40,13 +40,37 @@ class ViewController: UIViewController {
     }
     
     //MARK: - IBAction
-    @IBAction func singNormalButton(_ sender: Any) {
+    @IBAction func Login(_ sender: Any) {
         
        
-        /*
-       loginViewModel.login(username: Username.text, password: Password.text, type: String)
+        
+      //  LoginFunctionProtocol.login(username: Username.text, password: Password.text, type: String)
+        class login: LoginFunctionProtocol {
+            
+            var user: String?
+            var password: String?
+            
+            func login(username: String?, password: String?, type: LoginType) {
+                //funcion de login, falta implementar
+            }
+            
+        }
+        
+        class loginResult: LoginResultProtocol {
+            //funcion de resultado del login, falta implementar
+            
+            func success(user: User?, type: LoginType) {
+                //aplicamos flujo del login correcto
+            }
+            
+            func error(error: Error, type: LoginType) {
+                NSError(domain: "Null value", code: 1, userInfo: nil)
+            }
+            
+           
+        }
     }
- */
+ 
     
    
 
@@ -55,5 +79,5 @@ class ViewController: UIViewController {
 
 
 
-}
+
 
