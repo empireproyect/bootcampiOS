@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>753675892905-ijq92083q0t45ggaea9v03um938rlcm6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.753675892905-ijq92083q0t45ggaea9v03um938rlcm6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCO-z_bxRlmiSX2L0oAxfrHWYZLZGrRvI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>753675892905</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.companyios.sportpop</string>
+	<key>PROJECT_ID</key>
+	<string>empireproyect-23d0e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>empireproyect-23d0e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:753675892905:ios:aa2a4d79cde126af5951b8</string>
+	<key>DATABASE_URL</key>
+	<string>https://empireproyect-23d0e-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
