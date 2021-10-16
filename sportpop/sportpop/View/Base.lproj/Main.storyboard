@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-Oa-iX6">
-                                <rect key="frame" x="20" y="734" width="374" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-Oa-iX6">
+                                <rect key="frame" x="20" y="734" width="374" height="29"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="Login">
@@ -44,6 +44,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" textContentType="new-password"/>
                             </textField>
+                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" layoutMarginsFollowReadableWidth="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-Wg-I6q">
+                                <rect key="frame" x="20" y="145" width="374" height="407"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,8 +58,11 @@
                             <constraint firstItem="pl0-uw-NDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PHb-cq-XSw"/>
                             <constraint firstItem="pl0-uw-NDQ" firstAttribute="top" secondItem="Exd-Cx-rUo" secondAttribute="bottom" constant="30" id="Pho-pq-jWA"/>
                             <constraint firstItem="BwE-Oa-iX6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S4w-HL-Uxp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NBk-Wg-I6q" secondAttribute="trailing" constant="20" id="auE-Av-KEO"/>
+                            <constraint firstItem="NBk-Wg-I6q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="cO9-iL-rGV"/>
                             <constraint firstItem="BwE-Oa-iX6" firstAttribute="top" secondItem="pl0-uw-NDQ" secondAttribute="bottom" constant="30" id="cpg-fP-BcH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Exd-Cx-rUo" secondAttribute="trailing" constant="20" id="ezC-Gl-hMi"/>
+                            <constraint firstItem="NBk-Wg-I6q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lcU-VR-Pj0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zmv-MF-mLT" secondAttribute="trailing" constant="20" id="n5D-Up-axI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BwE-Oa-iX6" secondAttribute="trailing" constant="20" id="o8p-SU-Th7"/>
                             <constraint firstItem="Zmv-MF-mLT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="opV-er-Qet"/>
@@ -74,6 +80,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="194" height="170"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
