@@ -64,7 +64,8 @@ class ViewController: UIViewController {
             }
             
             func error(error: Error, type: LoginType) {
-                NSError(domain: "Null value", code: 1, userInfo: nil)
+                //hubo error, definir los errores, añadir los de firebase
+                NSError(domain: "Usuario/contraseña vacia", code: 1, userInfo: nil)
             }
             
            
