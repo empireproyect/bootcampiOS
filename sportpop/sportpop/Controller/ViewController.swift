@@ -13,12 +13,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var Username: UITextField!
     @IBOutlet weak var Password: UITextField!
     
+    private let primaryColor = UIColor(red: 255/255, green: 165/255, blue: 0/255, alpha: 1)
+    private let secondaryColor = UIColor(red: 255/255, green: 255/175, blue: 255/255, alpha: 1)
+    private let terciaryColor = UIColor(red: 210/255, green: 210/255, blue: 210/255, alpha: 1)
+    
     //let loginViewModel =
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+        Username?.layer.borderColor = terciaryColor.cgColor
+        Username?.layer.borderWidth = 2
+        Username?.layer.cornerRadius = 3
+        Username?.clipsToBounds = false
+        
+        Password?.layer.borderColor = terciaryColor.cgColor
+        Password?.layer.borderWidth = 2
+        Password?.layer.cornerRadius = 3
+        Password?.clipsToBounds = true
+        
+        ButtonLogin.layer.borderColor =  secondaryColor.cgColor
+        ButtonLogin.setTitleColor(secondaryColor, for: .normal)
+        ButtonLogin.layer.cornerRadius = 3
+        ButtonLogin.clipsToBounds = true
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
