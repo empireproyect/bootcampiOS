@@ -4,12 +4,13 @@
 //
 //  Created by Ricardo Hernandez on 18/9/21.
 //
-
+import Foundation
 import UIKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var ButtonLogin: UIButton!
+    @IBOutlet weak var launchSingUp: UIButton!
     @IBOutlet weak var Username: UITextField!
     @IBOutlet weak var Password: UITextField!
     
@@ -19,34 +20,56 @@ class ViewController: UIViewController {
     
     //let loginViewModel =
     
+    // MARK: - Life Cyle
+    
+    //1
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
-        Username?.layer.borderColor = terciaryColor.cgColor
-        Username?.layer.borderWidth = 2
-        Username?.layer.cornerRadius = 3
-        Username?.clipsToBounds = false
         
-        Password?.layer.borderColor = terciaryColor.cgColor
-        Password?.layer.borderWidth = 2
-        Password?.layer.cornerRadius = 3
-        Password?.clipsToBounds = true
-        
-        ButtonLogin.layer.borderColor =  secondaryColor.cgColor
-        ButtonLogin.setTitleColor(secondaryColor, for: .normal)
-        ButtonLogin.layer.cornerRadius = 3
-        ButtonLogin.clipsToBounds = true
-        
+    
+        initializeData()
+
+    }
+    
+    @IBAction func ButtonLogin(_ sender: Any){
         
     }
+    @IBAction func launchSingUp(_ sender: Any){
+        
+    }
+    
+    
+    //2
     
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
         
-       initializeData()
+      
+    }
+    
+    //3
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+      
+    }
+    
+    //4
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+     
+    }
+    
+    //5
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        super.viewDidDisappear(animated)
+        
+       
     }
     
     private func initializeData() {
@@ -54,6 +77,23 @@ class ViewController: UIViewController {
         //Playholder text
         Username?.placeholder = "Username"
         Password?.placeholder = "Password"
+        
+        Username?.round()
+//
+//        Username?.layer.borderColor = terciaryColor.cgColor
+//        Username?.layer.borderWidth = 2
+//        Username?.layer.cornerRadius = 3
+//        Username?.clipsToBounds = false
+//
+//         Password?.layer.borderColor = terciaryColor.cgColor
+//         Password?.layer.borderWidth = 2
+//         Password?.layer.cornerRadius = 3
+//         Password?.clipsToBounds = true
+//
+//         ButtonLogin.layer.borderColor =  secondaryColor.cgColor
+//         ButtonLogin.setTitleColor(secondaryColor, for: .normal)
+//         ButtonLogin.layer.cornerRadius = 3
+//         ButtonLogin.clipsToBounds = true
         
         
 //        loginViewModel.delegate = self
