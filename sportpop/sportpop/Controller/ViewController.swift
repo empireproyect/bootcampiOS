@@ -79,6 +79,7 @@ class ViewController: UIViewController {
         Password?.placeholder = "Password"
         
         Username?.round()
+      
 //
 //        Username?.layer.borderColor = terciaryColor.cgColor
 //        Username?.layer.borderWidth = 2

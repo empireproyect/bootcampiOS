@@ -65,7 +65,7 @@
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Y6W-OH-hqX" kind="show" id="Uip-gX-n6R"/>
+                                    <segue destination="Y6W-OH-hqX" kind="show" identifier="SegueSingUp" id="Uip-gX-n6R"/>
                                 </connections>
                             </button>
                             <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-Wg-I6q">
