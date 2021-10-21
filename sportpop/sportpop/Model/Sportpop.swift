@@ -44,7 +44,7 @@ struct User {
     var social_apple_id: String
 }
 
-struct Product {
+struct Productfirebase {
     var uid: String
     var pid: String
     var price: Double
