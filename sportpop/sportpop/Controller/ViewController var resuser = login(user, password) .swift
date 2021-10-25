@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     private func initializeData() {
         
         //Playholder text
-        Username?.placeholder = "Username"
+        UsernameTextView?.placeholder = "Username"
         Password?.placeholder = "Password"
         
         
@@ -110,23 +110,37 @@ class ViewController: UIViewController {
     //MARK: - IBAction
     @IBAction func Login(_ sender: Any) {
         
+    }
         
         
-      //  LoginFunctionProtocol.login(username: Username.text, password: Password.text, type: String)
-        class login: LoginFunctionProtocol {
+        
+       
+    class login: LoginFunctionProtocol {
+        func login(username: String?, password: String?, type: LoginType) {
+        
+        }
+        
+    
+            //var res = login(UsernameTextView.hasText, Password)
             
-            var user: String?
-            var password: String?
+           
+            
+            
+          
            
            
             
-            func login(username: String?, password: String?, type: LoginType) {
-                init(username: String, password: String, 0)
+            //func login(username: String?, password: String?, type: LoginType) -> Int {
+              
+            //convenience init (username: String , password: String, type: LoginType)
+            
+            
                 
                 //funcion de login, falta implementar
-            }
             
-        }
+            
+            
+       
         
         class loginResult: LoginResultProtocol {
             //funcion de resultado del login, falta implementar
@@ -142,15 +156,7 @@ class ViewController: UIViewController {
             
            
         }
-    }
+   }
+}
  
     
-   
-
-
-}
-
-
-
-
-

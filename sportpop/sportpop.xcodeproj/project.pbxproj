@@ -3,26 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B6048F9A2709B5230027ECD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6048F992709B5230027ECD5 /* LaunchScreen.storyboard */; };
 		B63B900626F63660008BB129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900526F63660008BB129 /* AppDelegate.swift */; };
 		B63B900826F63660008BB129 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900726F63660008BB129 /* SceneDelegate.swift */; };
-		B63B900A26F63660008BB129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900926F63660008BB129 /* ViewController.swift */; };
+		B63B900A26F63660008BB129 /* ViewController var resuser = login(user, password) .swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B900926F63660008BB129 /* ViewController var resuser = login(user, password) .swift */; };
 		B63B900D26F63660008BB129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63B900B26F63660008BB129 /* Main.storyboard */; };
 		B63B900F26F63662008BB129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63B900E26F63662008BB129 /* Assets.xcassets */; };
 		B63B901D26F63663008BB129 /* sportpopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B901C26F63663008BB129 /* sportpopTests.swift */; };
 		B63B902826F63663008BB129 /* sportpopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B902726F63663008BB129 /* sportpopUITests.swift */; };
 		B6726ED82712D3DE000FA2AF /* Sportpop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726ED72712D3DE000FA2AF /* Sportpop.swift */; };
-		B6726EDA2713C346000FA2AF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726ED92713C346000FA2AF /* LoginViewModel.swift */; };
 		B6726EDC27173DE6000FA2AF /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6726EDB27173DE6000FA2AF /* SecondStoryboard.storyboard */; };
 		B6726EDD27173DE6000FA2AF /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6726EDB27173DE6000FA2AF /* SecondStoryboard.storyboard */; };
 		B6726EDE27173DE6000FA2AF /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6726EDB27173DE6000FA2AF /* SecondStoryboard.storyboard */; };
 		B6726EE027173E19000FA2AF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726EDF27173E19000FA2AF /* SecondViewController.swift */; };
 		B6726EE127173E19000FA2AF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726EDF27173E19000FA2AF /* SecondViewController.swift */; };
 		B6726EE227173E19000FA2AF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6726EDF27173E19000FA2AF /* SecondViewController.swift */; };
+		B6887D3D2721158600803CCB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D3C2721158600803CCB /* Product.swift */; };
+		B6887D3F2721159700803CCB /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D3E2721159700803CCB /* ProductRepository.swift */; };
+		B6887D43272115D700803CCB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D42272115D700803CCB /* HomeViewController.swift */; };
+		B6887D45272115E600803CCB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D44272115E600803CCB /* SplashViewController.swift */; };
+		B6887D47272115F600803CCB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D46272115F600803CCB /* DetailViewController.swift */; };
+		B6887D49272116B300803CCB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D48272116B300803CCB /* LoginViewModel.swift */; };
+		B6887D4B272118FF00803CCB /* ProcductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D4A272118FF00803CCB /* ProcductCellView.swift */; };
+		B6887D4D272120D100803CCB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6887D4C272120D100803CCB /* Home.storyboard */; };
+		B6887D50272123CA00803CCB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B6887D4F272123CA00803CCB /* FirebaseAnalytics */; };
+		B6887D52272123CA00803CCB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B6887D51272123CA00803CCB /* FirebaseAuth */; };
+		B6887D54272123CA00803CCB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B6887D53272123CA00803CCB /* FirebaseFirestore */; };
+		B6887D5727212C4D00803CCB /* FirebaseAuthMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6887D5627212C4D00803CCB /* FirebaseAuthMan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,23 +68,31 @@
 
 /* Begin PBXFileReference section */
 		B6048F992709B5230027ECD5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B63B900226F63660008BB129 /* sportpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = sportpop.app; path = "/Users/ricardohc/Desktop/bootcamp_mobile/@proyectofinal/proyectofinal/sportpopiOS/sportpop/build/Debug-iphoneos/sportpop.app"; sourceTree = "<absolute>"; };
 		B63B900526F63660008BB129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B63B900726F63660008BB129 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B63B900926F63660008BB129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B63B900926F63660008BB129 /* ViewController var resuser = login(user, password) .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController var resuser = login(user, password) .swift"; sourceTree = "<group>"; };
 		B63B900C26F63660008BB129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63B900E26F63662008BB129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63B901326F63662008BB129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B63B901826F63663008BB129 /* sportpopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = sportpopTests.xctest; path = "/Users/ricardohc/Desktop/bootcamp_mobile/@proyectofinal/proyectofinal/sportpopiOS/sportpop/build/Debug-iphoneos/sportpopTests.xctest"; sourceTree = "<absolute>"; };
 		B63B901C26F63663008BB129 /* sportpopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportpopTests.swift; sourceTree = "<group>"; };
 		B63B901E26F63663008BB129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B63B902326F63663008BB129 /* sportpopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = sportpopUITests.xctest; path = "/Users/ricardohc/Desktop/bootcamp_mobile/@proyectofinal/proyectofinal/sportpopiOS/sportpop/build/Debug-iphoneos/sportpopUITests.xctest"; sourceTree = "<absolute>"; };
 		B63B902726F63663008BB129 /* sportpopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportpopUITests.swift; sourceTree = "<group>"; };
 		B63B902926F63663008BB129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6726ED72712D3DE000FA2AF /* Sportpop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sportpop.swift; sourceTree = "<group>"; };
-		B6726ED92713C346000FA2AF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B6726EDB27173DE6000FA2AF /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
 		B6726EDF27173E19000FA2AF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B6887D39272114FA00803CCB /* sportpop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportpop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6887D3A272114FA00803CCB /* sportpopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sportpopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6887D3B272114FA00803CCB /* sportpopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sportpopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6887D3C2721158600803CCB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B6887D3E2721159700803CCB /* ProductRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		B6887D42272115D700803CCB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B6887D44272115E600803CCB /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B6887D46272115F600803CCB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B6887D48272116B300803CCB /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B6887D4A272118FF00803CCB /* ProcductCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcductCellView.swift; sourceTree = "<group>"; };
+		B6887D4C272120D100803CCB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B6887D5627212C4D00803CCB /* FirebaseAuthMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthMan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6887D50272123CA00803CCB /* FirebaseAnalytics in Frameworks */,
+				B6887D52272123CA00803CCB /* FirebaseAuth in Frameworks */,
+				B6887D54272123CA00803CCB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,12 +137,16 @@
 				B63B901B26F63663008BB129 /* sportpopTests */,
 				B63B902626F63663008BB129 /* sportpopUITests */,
 				AC7A76038C639932A30B2118 /* Pods */,
+				B6887D39272114FA00803CCB /* sportpop.app */,
+				B6887D3A272114FA00803CCB /* sportpopTests.xctest */,
+				B6887D3B272114FA00803CCB /* sportpopUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		B63B900426F63660008BB129 /* sportpop */ = {
 			isa = PBXGroup;
 			children = (
+				B6887D5527212BF300803CCB /* Firebase */,
 				B63B900526F63660008BB129 /* AppDelegate.swift */,
 				B63B900726F63660008BB129 /* SceneDelegate.swift */,
 				B6A52BAA2704E63500AC10F6 /* Model */,
@@ -151,10 +177,19 @@
 			path = sportpopUITests;
 			sourceTree = "<group>";
 		};
+		B6887D5527212BF300803CCB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B6887D5627212C4D00803CCB /* FirebaseAuthMan.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		B6A52BA82704E5F600AC10F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B63B900B26F63660008BB129 /* Main.storyboard */,
+				B6887D4C272120D100803CCB /* Home.storyboard */,
 				B6726EDB27173DE6000FA2AF /* SecondStoryboard.storyboard */,
 			);
 			path = View;
@@ -163,8 +198,11 @@
 		B6A52BA92704E61A00AC10F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B63B900926F63660008BB129 /* ViewController.swift */,
-				B6726ED92713C346000FA2AF /* LoginViewModel.swift */,
+				B6887D4A272118FF00803CCB /* ProcductCellView.swift */,
+				B63B900926F63660008BB129 /* ViewController var resuser = login(user, password) .swift */,
+				B6887D42272115D700803CCB /* HomeViewController.swift */,
+				B6887D46272115F600803CCB /* DetailViewController.swift */,
+				B6887D44272115E600803CCB /* SplashViewController.swift */,
 				B6726EDF27173E19000FA2AF /* SecondViewController.swift */,
 			);
 			path = Controller;
@@ -174,6 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				B6726ED72712D3DE000FA2AF /* Sportpop.swift */,
+				B6887D3C2721158600803CCB /* Product.swift */,
+				B6887D48272116B300803CCB /* LoginViewModel.swift */,
+				B6887D3E2721159700803CCB /* ProductRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,8 +236,13 @@
 			dependencies = (
 			);
 			name = sportpop;
+			packageProductDependencies = (
+				B6887D4F272123CA00803CCB /* FirebaseAnalytics */,
+				B6887D51272123CA00803CCB /* FirebaseAuth */,
+				B6887D53272123CA00803CCB /* FirebaseFirestore */,
+			);
 			productName = sportpop;
-			productReference = B63B900226F63660008BB129 /* sportpop.app */;
+			productReference = B6887D39272114FA00803CCB /* sportpop.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B63B901726F63663008BB129 /* sportpopTests */ = {
@@ -214,7 +260,7 @@
 			);
 			name = sportpopTests;
 			productName = sportpopTests;
-			productReference = B63B901826F63663008BB129 /* sportpopTests.xctest */;
+			productReference = B6887D3A272114FA00803CCB /* sportpopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B63B902226F63663008BB129 /* sportpopUITests */ = {
@@ -232,7 +278,7 @@
 			);
 			name = sportpopUITests;
 			productName = sportpopUITests;
-			productReference = B63B902326F63663008BB129 /* sportpopUITests.xctest */;
+			productReference = B6887D3B272114FA00803CCB /* sportpopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -266,6 +312,9 @@
 				Base,
 			);
 			mainGroup = B63B8FF926F63660008BB129;
+			packageReferences = (
+				B6887D4E272123CA00803CCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B63B8FF926F63660008BB129;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6048F9A2709B5230027ECD5 /* LaunchScreen.storyboard in Resources */,
+				B6887D4D272120D100803CCB /* Home.storyboard in Resources */,
 				B63B900F26F63662008BB129 /* Assets.xcassets in Resources */,
 				B63B900D26F63660008BB129 /* Main.storyboard in Resources */,
 				B6726EDC27173DE6000FA2AF /* SecondStoryboard.storyboard in Resources */,
@@ -312,12 +362,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6887D5727212C4D00803CCB /* FirebaseAuthMan.swift in Sources */,
+				B6887D47272115F600803CCB /* DetailViewController.swift in Sources */,
 				B6726EE027173E19000FA2AF /* SecondViewController.swift in Sources */,
 				B6726ED82712D3DE000FA2AF /* Sportpop.swift in Sources */,
-				B63B900A26F63660008BB129 /* ViewController.swift in Sources */,
+				B63B900A26F63660008BB129 /* ViewController var resuser = login(user, password) .swift in Sources */,
+				B6887D3F2721159700803CCB /* ProductRepository.swift in Sources */,
 				B63B900626F63660008BB129 /* AppDelegate.swift in Sources */,
-				B6726EDA2713C346000FA2AF /* LoginViewModel.swift in Sources */,
+				B6887D43272115D700803CCB /* HomeViewController.swift in Sources */,
+				B6887D49272116B300803CCB /* LoginViewModel.swift in Sources */,
+				B6887D4B272118FF00803CCB /* ProcductCellView.swift in Sources */,
 				B63B900826F63660008BB129 /* SceneDelegate.swift in Sources */,
+				B6887D3D2721158600803CCB /* Product.swift in Sources */,
+				B6887D45272115E600803CCB /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +703,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6887D4E272123CA00803CCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6887D4F272123CA00803CCB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6887D4E272123CA00803CCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B6887D51272123CA00803CCB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6887D4E272123CA00803CCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B6887D53272123CA00803CCB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6887D4E272123CA00803CCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B63B8FFA26F63660008BB129 /* Project object */;
 }
