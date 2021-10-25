@@ -17,3 +17,6 @@ protocol LoginResultProtocol: AnyObject {
   func success(user: User?, type: LoginType)
   func error(error: Error, type: LoginType)
 }
+
+
+

@@ -11,12 +11,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ButtonLogin: UIButton!
     @IBOutlet weak var launchSingUp: UIButton!
-    @IBOutlet weak var Username: UITextField!
+    @IBOutlet weak var UsernameTextView: UITextField!
     @IBOutlet weak var Password: UITextField!
     
     private let primaryColor = UIColor(red: 255/255, green: 165/255, blue: 0/255, alpha: 1)
     private let secondaryColor = UIColor(red: 255/255, green: 255/175, blue: 255/255, alpha: 1)
     private let terciaryColor = UIColor(red: 210/255, green: 210/255, blue: 210/255, alpha: 1)
+    
+    
+    
     
     //let loginViewModel =
     
@@ -78,6 +81,9 @@ class ViewController: UIViewController {
         Username?.placeholder = "Username"
         Password?.placeholder = "Password"
         
+        
+        
+        
         //Username?.round()
       
 //
@@ -104,15 +110,19 @@ class ViewController: UIViewController {
     //MARK: - IBAction
     @IBAction func Login(_ sender: Any) {
         
-       
+        
         
       //  LoginFunctionProtocol.login(username: Username.text, password: Password.text, type: String)
         class login: LoginFunctionProtocol {
             
             var user: String?
             var password: String?
+           
+           
             
             func login(username: String?, password: String?, type: LoginType) {
+                init(username: String, password: String, 0)
+                
                 //funcion de login, falta implementar
             }
             

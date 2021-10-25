@@ -8,117 +8,117 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondStoryboard" id="Y6W-OH-hqX" customClass="SecondViewController" customModule="sportpop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="UserName" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="User Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-Sz-Nx8">
-                                <rect key="frame" x="20" y="412" width="374" height="50"/>
-                                <accessibility key="accessibilityConfiguration" label="Password"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="sXF-F5-TsN">
+                                <rect key="frame" x="20" y="450" width="374" height="322"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="UserName" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="User Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-Sz-Nx8">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                        <accessibility key="accessibilityConfiguration" label="Password"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6c7-NM-uyE">
+                                        <rect key="frame" x="0.0" y="59" width="374" height="28"/>
+                                        <accessibility key="accessibilityConfiguration" label="Password"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-5o-aCr">
+                                        <rect key="frame" x="0.0" y="118" width="374" height="28"/>
+                                        <accessibility key="accessibilityConfiguration" label="Password"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-YN-4A2">
+                                        <rect key="frame" x="0.0" y="177" width="374" height="27"/>
+                                        <accessibility key="accessibilityConfiguration" label="Password"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" textContentType="new-password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ttU-uJ-rtS">
+                                        <rect key="frame" x="0.0" y="235" width="374" height="27"/>
+                                        <accessibility key="accessibilityConfiguration" label="Password"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" textContentType="new-password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hka-hU-w7U">
+                                        <rect key="frame" x="0.0" y="293" width="374" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="SingUp">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="FCg-Ew-HEz"/>
+                                    <constraint firstAttribute="trailing" secondItem="mpU-YN-4A2" secondAttribute="trailing" id="07U-MQ-4Fu"/>
+                                    <constraint firstItem="ttU-uJ-rtS" firstAttribute="leading" secondItem="sXF-F5-TsN" secondAttribute="leading" id="39w-Yw-4kp"/>
+                                    <constraint firstAttribute="trailing" secondItem="hka-hU-w7U" secondAttribute="trailing" id="G4h-Di-oqv"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNu-5o-aCr" secondAttribute="trailing" id="Jra-ve-Su7"/>
+                                    <constraint firstItem="mpU-YN-4A2" firstAttribute="leading" secondItem="sXF-F5-TsN" secondAttribute="leading" id="MIm-PE-tbb"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cu-Sz-Nx8" secondAttribute="trailing" id="MlA-ka-EPm"/>
+                                    <constraint firstAttribute="trailing" secondItem="6c7-NM-uyE" secondAttribute="trailing" id="Q1T-mH-e8l"/>
+                                    <constraint firstItem="5cu-Sz-Nx8" firstAttribute="leading" secondItem="sXF-F5-TsN" secondAttribute="leading" id="QOt-p6-vWc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ttU-uJ-rtS" secondAttribute="trailing" id="V9o-cT-2tb"/>
+                                    <constraint firstItem="6c7-NM-uyE" firstAttribute="leading" secondItem="sXF-F5-TsN" secondAttribute="leading" id="hDX-RN-Mx7"/>
+                                    <constraint firstItem="FNu-5o-aCr" firstAttribute="leading" secondItem="sXF-F5-TsN" secondAttribute="leading" id="nzk-Uk-DrI"/>
+                                    <constraint firstItem="hka-hU-w7U" firstAttribute="leading" secondItem="sXF-F5-TsN" secondAttribute="leading" id="ozb-hP-kIl"/>
                                 </constraints>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6c7-NM-uyE">
-                                <rect key="frame" x="20" y="492" width="374" height="50"/>
-                                <accessibility key="accessibilityConfiguration" label="Password"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Pz7-FE-Hz3"/>
-                                </constraints>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-5o-aCr">
-                                <rect key="frame" x="20" y="572" width="374" height="50"/>
-                                <accessibility key="accessibilityConfiguration" label="Password"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="qej-0P-Hrk"/>
-                                </constraints>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="Email" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="y4z-n1-Jh1">
-                                <rect key="frame" x="20" y="652" width="374" height="50"/>
-                                <accessibility key="accessibilityConfiguration" label="Password"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="rvb-ld-5qB"/>
-                                </constraints>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-YN-4A2">
-                                <rect key="frame" x="20" y="732" width="374" height="50"/>
-                                <accessibility key="accessibilityConfiguration" label="Password"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Tbe-oP-rBK"/>
-                                </constraints>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" textContentType="new-password"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hka-hU-w7U">
-                                <rect key="frame" x="20" y="812" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="Zer-pX-RUS"/>
-                                    <constraint firstAttribute="height" constant="50" id="zg2-1g-K41"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="SingUp">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoios" translatesAutoresizingMaskIntoConstraints="NO" id="nav-9g-Uwq">
-                                <rect key="frame" x="20" y="94" width="374" height="298"/>
-                            </imageView>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-Vm-g7y">
+                                <rect key="frame" x="0.0" y="70" width="414" height="425"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoios" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-tl-X6U">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="425"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FNu-5o-aCr" secondAttribute="trailing" constant="20" id="1RC-Sk-a2K"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5cu-Sz-Nx8" secondAttribute="trailing" constant="20" id="4ni-Sp-sO4"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mpU-YN-4A2" secondAttribute="trailing" constant="20" id="5DW-qn-6iO"/>
-                            <constraint firstItem="mpU-YN-4A2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6Dg-D0-2sw"/>
-                            <constraint firstItem="5cu-Sz-Nx8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="AFS-yk-HmO"/>
-                            <constraint firstItem="y4z-n1-Jh1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="D1c-rc-Kd5"/>
-                            <constraint firstItem="hka-hU-w7U" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="FPf-pd-Sqc"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5cu-Sz-Nx8" secondAttribute="trailing" constant="20" id="IcQ-xE-P5O"/>
-                            <constraint firstItem="6c7-NM-uyE" firstAttribute="top" secondItem="5cu-Sz-Nx8" secondAttribute="bottom" constant="30" id="JBP-wX-lG2"/>
-                            <constraint firstItem="mpU-YN-4A2" firstAttribute="top" secondItem="y4z-n1-Jh1" secondAttribute="bottom" constant="30" id="Kcy-L7-TtB"/>
-                            <constraint firstItem="nav-9g-Uwq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Kx9-31-Wy0"/>
-                            <constraint firstItem="hka-hU-w7U" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Mtq-ya-1cF"/>
-                            <constraint firstItem="5cu-Sz-Nx8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" priority="249" constant="249" id="NsU-ce-9Im"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6c7-NM-uyE" secondAttribute="trailing" constant="20" id="OSD-f7-AN1"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hka-hU-w7U" secondAttribute="trailing" constant="20" id="QV3-s2-MIW"/>
-                            <constraint firstItem="hka-hU-w7U" firstAttribute="top" secondItem="mpU-YN-4A2" secondAttribute="bottom" constant="30" id="Shl-1m-KyH"/>
-                            <constraint firstItem="FNu-5o-aCr" firstAttribute="top" secondItem="6c7-NM-uyE" secondAttribute="bottom" constant="30" id="VjF-Pk-r4g"/>
-                            <constraint firstItem="nav-9g-Uwq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="WFe-VD-hSJ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="y4z-n1-Jh1" secondAttribute="trailing" constant="20" id="Zgo-me-UbA"/>
-                            <constraint firstItem="6c7-NM-uyE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="aFV-6U-CO8"/>
-                            <constraint firstItem="mpU-YN-4A2" firstAttribute="top" secondItem="y4z-n1-Jh1" secondAttribute="bottom" constant="30" id="cjD-eg-P2U"/>
-                            <constraint firstItem="mpU-YN-4A2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="jpL-Hn-7uh"/>
-                            <constraint firstItem="y4z-n1-Jh1" firstAttribute="top" secondItem="FNu-5o-aCr" secondAttribute="bottom" constant="30" id="pGY-Df-Nng"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mpU-YN-4A2" secondAttribute="trailing" constant="20" id="rLX-1n-Qe8"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nav-9g-Uwq" secondAttribute="trailing" constant="20" id="s6r-h6-bej"/>
-                            <constraint firstItem="hka-hU-w7U" firstAttribute="top" secondItem="mpU-YN-4A2" secondAttribute="bottom" constant="30" id="vyQ-F6-JMM"/>
-                            <constraint firstItem="5cu-Sz-Nx8" firstAttribute="top" secondItem="nav-9g-Uwq" secondAttribute="bottom" constant="20" id="yQO-NE-W4k"/>
-                            <constraint firstItem="FNu-5o-aCr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="yti-la-rlX"/>
+                            <constraint firstItem="rnl-Vm-g7y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9Nt-v0-f19"/>
+                            <constraint firstItem="sXF-F5-TsN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Obn-bg-n6m"/>
+                            <constraint firstItem="rnl-Vm-g7y" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="70" id="cXD-t4-3kj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sXF-F5-TsN" secondAttribute="trailing" constant="20" id="pcv-rf-J3e"/>
+                            <constraint firstItem="sXF-F5-TsN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="450" id="tpb-om-HcC"/>
+                            <constraint firstAttribute="trailing" secondItem="rnl-Vm-g7y" secondAttribute="trailing" id="vDU-0b-8rq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qoS-T5-JWa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gPR-xU-akj">
+            <objects>
+                <navigationController id="E8V-vR-23i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7LU-J5-lZF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="show" id="z28-qw-gAj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dj-z9-Elu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1125" y="42"/>
         </scene>
     </scenes>
     <resources>
