@@ -74,7 +74,7 @@ class ViewController: UIViewController {
                 
                 if let result = result, error == nil {
                     
-                    self.navigationController?.pushViewController(SecondViewController (email: result.user.email, password: .basic), animated: true)
+                    self.navigationController?.pushViewController(SecondViewController (nibName: result.user.email, bundle: nil), animated: true)
                     
                 } else {
                     //alert con pop-up

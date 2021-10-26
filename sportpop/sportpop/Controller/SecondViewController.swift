@@ -30,9 +30,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Autenticatión"
-        guard let username = UserName.text , let password = password.text else { return }
+        guard let email = email.text , let password = password.text else { return }
         
-        if username == username && username != nil {
+        if email == email && email != nil {
         
     
         } else {
