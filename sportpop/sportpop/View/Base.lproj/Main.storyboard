@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pl0-uw-NDQ">
-                                <rect key="frame" x="20" y="620" width="374" height="40"/>
+                                <rect key="frame" x="20" y="617" width="374" height="40"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="PasswordTextView" label="Password"/>
                                 <constraints>
@@ -28,20 +28,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" textContentType="new-password"/>
                             </textField>
-                            <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-Cx-rUo">
-                                <rect key="frame" x="20" y="570" width="374" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <accessibility key="accessibilityConfiguration" identifier="UsernameTextView" label="Username"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1cg-tq-FFU"/>
-                                    <constraint firstAttribute="width" constant="374" id="AEW-6L-HXb"/>
-                                </constraints>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-Oa-iX6" customClass="LoginViewModel" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="20" y="712" width="374" height="40"/>
+                                <rect key="frame" x="20" y="697" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ButtonLogin" label="Login">
                                     <accessibilityTraits key="traits" button="YES"/>
@@ -55,10 +43,11 @@
                                 </state>
                             </button>
                             <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFP-lw-uiq">
-                                <rect key="frame" x="20" y="772" width="374" height="30"/>
+                                <rect key="frame" x="20" y="777" width="374" height="40"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="launchSingUp"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="FpY-gz-Ofh"/>
+                                    <constraint firstAttribute="height" constant="40" id="FpY-gz-Ofh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="SingUp">
@@ -69,26 +58,38 @@
                                 <rect key="frame" x="20" y="207" width="374" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-Cx-rUo">
+                                <rect key="frame" x="20" y="562" width="374" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="UsernameTextView" label="Username"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1cg-tq-FFU"/>
+                                    <constraint firstAttribute="width" constant="374" id="AEW-6L-HXb"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Exd-Cx-rUo" firstAttribute="leading" secondItem="pl0-uw-NDQ" secondAttribute="leading" id="4pa-Gw-isb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QFP-lw-uiq" secondAttribute="bottom" constant="60" id="9MO-hl-cXH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QFP-lw-uiq" secondAttribute="bottom" constant="45" id="9MO-hl-cXH"/>
                             <constraint firstItem="QFP-lw-uiq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AEU-md-as1"/>
                             <constraint firstItem="Exd-Cx-rUo" firstAttribute="trailing" secondItem="pl0-uw-NDQ" secondAttribute="trailing" id="EQh-P7-gcm"/>
                             <constraint firstItem="Exd-Cx-rUo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="He3-8B-6rr"/>
-                            <constraint firstItem="pl0-uw-NDQ" firstAttribute="top" secondItem="Exd-Cx-rUo" secondAttribute="bottom" constant="10" id="JoI-uI-fMM"/>
+                            <constraint firstItem="pl0-uw-NDQ" firstAttribute="top" secondItem="Exd-Cx-rUo" secondAttribute="bottom" constant="15" id="JoI-uI-fMM"/>
                             <constraint firstItem="pl0-uw-NDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KUN-tq-bT4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Exd-Cx-rUo" secondAttribute="trailing" constant="20" id="M1E-gp-npc"/>
-                            <constraint firstItem="BwE-Oa-iX6" firstAttribute="top" secondItem="pl0-uw-NDQ" secondAttribute="bottom" constant="52" id="TEE-nK-KmU"/>
+                            <constraint firstItem="BwE-Oa-iX6" firstAttribute="top" secondItem="pl0-uw-NDQ" secondAttribute="bottom" constant="40" id="TEE-nK-KmU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pl0-uw-NDQ" secondAttribute="trailing" constant="20" id="VgY-RV-idR"/>
                             <constraint firstItem="BwE-Oa-iX6" firstAttribute="leading" secondItem="QFP-lw-uiq" secondAttribute="leading" id="VhP-fD-RGL"/>
                             <constraint firstItem="QFP-lw-uiq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xci-aK-qcp"/>
                             <constraint firstItem="pl0-uw-NDQ" firstAttribute="trailing" secondItem="BwE-Oa-iX6" secondAttribute="trailing" id="c22-AR-50e"/>
                             <constraint firstItem="QFP-lw-uiq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hqH-3z-djJ"/>
                             <constraint firstItem="BwE-Oa-iX6" firstAttribute="trailing" secondItem="QFP-lw-uiq" secondAttribute="trailing" id="meV-mh-Y5x"/>
-                            <constraint firstItem="QFP-lw-uiq" firstAttribute="top" secondItem="BwE-Oa-iX6" secondAttribute="bottom" constant="20" id="ojn-PX-dJ8"/>
+                            <constraint firstItem="QFP-lw-uiq" firstAttribute="top" secondItem="BwE-Oa-iX6" secondAttribute="bottom" constant="40" id="ojn-PX-dJ8"/>
                             <constraint firstItem="pl0-uw-NDQ" firstAttribute="leading" secondItem="BwE-Oa-iX6" secondAttribute="leading" id="tzp-ye-IXR"/>
                         </constraints>
                     </view>
@@ -99,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="110"/>
+            <point key="canvasLocation" x="-746.37681159420299" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>

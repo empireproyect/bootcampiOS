@@ -4,13 +4,19 @@
 //
 //  Created by Ricardo Hernandez on 13/10/21.
 //
-import Foundation
-import UIKit
 
+import UIKit
+import FirebaseAuth
+
+enum Providertype: String {
+    case basic
+}
+private let provider: Providertype = .basic
 
 class SecondViewController: UIViewController {
     
-    @IBOutlet weak var Email: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var FirstName: UITextField!
     @IBOutlet weak var LastName: UITextField!
@@ -22,7 +28,18 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        UserName?.placeholder = "User Name placeholder"
+        
+        title = "Autenticatión"
+        guard let username = UserName.text , let password = password.text else { return }
+        
+        if username == username && username != nil {
+        
+    
+        } else {
+            
+        }
+    
+        //UserName?.placeholder = "User Name placeholder"
         //initializeData()
       
         
